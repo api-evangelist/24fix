@@ -1,0 +1,65 @@
+generated: '2026-09-05'
+method: probed
+source: live DNS/TLS/HTTP probes of every 24X / 24 FIX host reachable from apis.yml
+note: >-
+  All 24x.co.th hosts sit behind Cloudflare and share one wildcard certificate. The legacy
+  24fix.co brand domain is no longer operated as a site — it resolves to GoDaddy parking
+  (ns07/ns08.domaincontrol.com, /lander redirect stub) and is recorded here only because it
+  is the brand's historic domain and is still linked from 24x.co.th.
+hosts:
+- host: 24x.co.th
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Oct 20 00:30:12 2026 GMT
+  hsts: false
+- host: www.24x.co.th
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Oct 20 00:30:12 2026 GMT
+  hsts: false
+- host: fix.24x.co.th
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Oct 20 00:30:12 2026 GMT
+  hsts: false
+- host: business.24x.co.th
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Oct 20 00:30:12 2026 GMT
+  hsts: false
+- host: housesolution.24x.co.th
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Oct 20 00:30:12 2026 GMT
+  hsts: false
+- host: projects.24x.co.th
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Oct 20 00:30:12 2026 GMT
+  hsts: false
+- host: careers.24x.co.th
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Oct 20 00:30:12 2026 GMT
+  hsts: false
+- host: 24fix.co
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Mar 12 11:47:00 2027 GMT
+  hsts: false
+  note: parked domain (GoDaddy), not an operated site
+domains:
+- domain: 24x.co.th
+  dnssec: false
+  caa: []
+  spf: false
+  dmarc: false
+- domain: 24fix.co
+  dnssec: false
+  caa: []
+  spf: false
+  dmarc: true
+  dmarc_policy: quarantine
+  note: >-
+    DMARC record is GoDaddy parking infrastructure (rua=dmarc_rua@onsecureserver.net), not a
+    policy the company publishes for its operating domain.

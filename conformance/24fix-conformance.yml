@@ -1,0 +1,22 @@
+generated: '2026-09-05'
+method: derived
+source: >-
+  derived from the absence of any machine-readable contract in this repo after full STEP 0b
+  contract discovery across every 24X / 24 FIX host
+standards: []
+note: >-
+  No standard can be asserted for 24 FIX. The company publishes no OpenAPI, Swagger, GraphQL
+  SDL, AsyncAPI, WSDL, Protobuf, OGC capabilities document or apis.json on any host it
+  operates, and no OAuth, OIDC or /.well-known/ discovery surface, so there is nothing whose
+  conformance could be evaluated. This is a recorded honest absence, not an unmeasured gap —
+  see well-known/24fix-well-known.yml for the probe log. Its market (residential and
+  commercial property maintenance / field service) has no domain interchange standard this
+  pipeline tracks, so domain_standard_conformance is not applicable and is not scored against
+  the company.
+domain_standard:
+  applicable: false
+  reason: >-
+    Home-services field dispatch has no widely adopted machine-readable interchange standard;
+    the reward-only domain_standard_conformance check is therefore left unfilled rather than
+    invented.
+compliance_program: none-published

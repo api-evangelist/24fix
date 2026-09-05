@@ -64,5 +64,48 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-24 FIX is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://equityzen.com/company/24fix
+24 FIX is the flagship consumer home-maintenance brand of 24 Solution Group (Thailand) Co., Ltd.,
+founded in Bangkok in 2018 and now operating under the 24X umbrella brand. It runs an end-to-end
+property maintenance and home-solutions service — air-conditioner cleaning and repair, appliance
+service, electrical, plumbing, painting, cleaning, renovation and construction — through an in-house
+managed network of more than 500 fixer teams and material vendor stores across Bangkok and the
+surrounding provinces, with expansion into Phuket and Singapore. Four business lines sit under the
+group: 24 FIX (consumer), 24 FIX for Business (commercial and facility maintenance), 24 House
+Solution, and 24 Projects (renovation and construction).
+
+## API surface
+
+**24 FIX publishes no public API.** This is a measured absence, recorded 2026-09-05 after a full
+contract-discovery pass across every host the company operates — `24x.co.th`, `www.24x.co.th`,
+`fix.24x.co.th`, `business.24x.co.th`, `housesolution.24x.co.th`, `projects.24x.co.th` and
+`careers.24x.co.th`:
+
+- No OpenAPI, Swagger, GraphQL SDL, AsyncAPI, WSDL or Protobuf contract at any probed location.
+- No `/apis.json`, `/apis.yml` or `/.well-known/apis.json`.
+- No `/.well-known/` discovery document at all — every named path returns a genuine 404, and so does
+  the negative control, so these are true absences rather than a catch-all.
+- No `/llms.txt`, MCP server or A2A agent card.
+- No developer portal, API reference, SDK, CLI or webhook catalog. The strings "API", "SDK",
+  "developer" and "webhook" do not appear in the served HTML of any 24X property.
+- The one `/api/` tree in the estate is the internal Next.js route set of the `fix.24x.co.th`
+  booking app, which the site's own `robots.txt` disallows. It is an application internal, not a
+  product.
+- The legacy brand domain `24fix.co` is a parked GoDaddy domain: it answers 200 on every path with a
+  114-byte lander redirect, including a negative control that cannot exist, so every 200 on that
+  host is discarded.
+
+Corporate service and partnership enquiries go to business@24fix.co.
+
+## Links
+
+- Company: https://24x.co.th/
+- 24 FIX (consumer booking): https://fix.24x.co.th
+- 24 FIX for Business: https://business.24x.co.th
+- 24 House Solution: https://housesolution.24x.co.th
+- 24 Projects: https://projects.24x.co.th
+- About: https://24x.co.th/en/about-us
+- Contact: https://24x.co.th/th/contact-us
+- Blog / community: https://fix.24x.co.th/blog
+- Terms and conditions: https://24x.co.th/th/term-condition
+- Privacy policy: https://24x.co.th/th/privacy-policy
+- Secondary-market listing (harvest source): https://equityzen.com/company/24fix

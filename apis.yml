@@ -1,10 +1,27 @@
 aid: 24fix
 name: 24 FIX
-description: '24 FIX is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: >-
+  24 FIX is the flagship consumer home-maintenance brand of 24 Solution Group (Thailand) Co., Ltd.,
+  founded in Bangkok in 2018 by six co-founders and now operating under the 24X umbrella brand. It
+  runs an end-to-end property maintenance and home-solutions service rather than a matchmaking
+  marketplace: air-conditioner cleaning and repair, washing-machine and appliance service, electrical
+  and plumbing work, painting, cleaning, renovation and construction, delivered through an in-house
+  managed ecosystem of more than 500 fixer teams and material vendor stores across Bangkok and the
+  surrounding provinces, with expansion into Phuket and Singapore. The group fields four business
+  lines — 24 FIX (consumer), 24 FIX for Business (commercial and facility maintenance, 500+ corporate
+  customers), 24 House Solution, and 24 Projects (renovation and construction) — supported by an
+  internal computerized maintenance management system that dispatches, tracks and quality-controls
+  technician jobs. It raised a seed round in 2020, a pre-Series A from ECG Venture Capital in 2021, a
+  150 million THB Series A from Krungsri Finnovate, ECG Venture Capital and BCH Ventures in 2022, and
+  a USD 5 million Series B from Wavemaker and Krungsri Finnovate in 2023. 24 FIX is a consumer and
+  B2B services operator, not a software vendor: it publishes no developer portal, no API
+  documentation, no SDKs and no machine-readable API contract, and the only /api/ path on its booking
+  application is an internal Next.js route tree its own robots.txt disallows.
+image: https://24x.co.th/24fix/img/logo.svg
 url: https://raw.githubusercontent.com/api-evangelist/24fix/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
+x-harvest-source-url: https://equityzen.com/company/24fix
 x-tier: stub
 x-tier-reason: harvest
 specificationVersion: '0.20'
@@ -12,6 +29,16 @@ created: '2026-09-05'
 modified: '2026-09-05'
 tags:
 - Company
+- Home Services
+- Property Maintenance
+- Facility Management
+- Field Service
+- Marketplace
+- Construction
+- Renovation
+- Consumer Services
+- Thailand
+- Southeast Asia
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -20,4 +47,52 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
-  url: https://equityzen.com/company/24fix
+  url: https://24x.co.th/
+- type: Blog
+  url: https://fix.24x.co.th/blog
+- type: Support
+  url: https://24x.co.th/th/contact-us
+- type: TermsOfService
+  url: https://24x.co.th/th/term-condition
+- type: PrivacyPolicy
+  url: https://24x.co.th/th/privacy-policy
+- type: DomainSecurity
+  url: security/24fix-domain-security.yml
+- type: Packages
+  url: packages/24fix-packages.yml
+- type: Conformance
+  url: conformance/24fix-conformance.yml
+- type: LLMsTxt
+  url: llms/24fix-llms.txt
+x-enrichment:
+  date: '2026-09-05'
+  status: minimal
+  artifacts_added: 5
+  pass: local-v3
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: >-
+    24 FIX is a Bangkok home-maintenance services operator whose only software is a consumer
+    booking app; the words "API", "SDK", "developer" and "webhook" appear nowhere in the served
+    HTML of any 24X property, every named /.well-known/ and spec path 404s on all seven operated
+    hosts, and the single /api/ tree that exists is the fix.24x.co.th Next.js app's own internal
+    routes, which its robots.txt disallows.
+  evidence:
+  - url: https://24x.co.th/openapi.json
+    status: 404
+  - url: https://fix.24x.co.th/openapi.json
+    status: 404
+  - url: https://24x.co.th/.well-known/api-catalog
+    status: 404
+  - url: https://fix.24x.co.th/.well-known/agent-card.json
+    status: 404
+  - url: https://24x.co.th/llms.txt
+    status: 404
+  - url: https://24x.co.th/apis.json
+    status: 404
+  - url: https://fix.24x.co.th/robots.txt
+    status: 200
+  - url: https://24fix.co/
+    status: 200
+  checked: '2026-09-05'

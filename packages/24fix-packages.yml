@@ -1,0 +1,28 @@
+generated: '2026-09-05'
+method: searched
+source: >-
+  npm registry search, PyPI, and a search of every 24X / 24 FIX web property for SDK, client
+  library or GitHub organization links
+package_count: 0
+packages: []
+registries_searched:
+- registry: npm
+  query: 24fix
+  url: https://registry.npmjs.org/-/v1/search?text=24fix
+  result: no matching package
+- registry: pypi
+  query: 24fix
+  url: https://pypi.org/pypi/24fix/json
+  status: 404
+  result: absent
+- registry: github
+  query: 24fix / 24 Solution Group
+  result: >-
+    no GitHub organization or repository could be attributed to 24 FIX, 24X or
+    24 Solution Group (Thailand) Co., Ltd.
+note: >-
+  24 FIX publishes no client libraries. The company is a consumer and B2B home-maintenance
+  services operator, not a software vendor: none of 24x.co.th, fix.24x.co.th,
+  business.24x.co.th, housesolution.24x.co.th or projects.24x.co.th mentions an API, SDK,
+  webhook or developer program anywhere in its served HTML. No SDKs pointer is emitted,
+  because there is no SDK.

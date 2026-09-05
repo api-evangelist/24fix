@@ -1,0 +1,56 @@
+# 24 FIX
+
+> 24 FIX is the flagship consumer home-maintenance brand of 24 Solution Group (Thailand) Co., Ltd.,
+> founded in Bangkok in 2018 and now operating under the 24X umbrella brand. It delivers end-to-end
+> property maintenance — air-conditioner cleaning and repair, appliance service, electrical, plumbing,
+> painting, cleaning, renovation and construction — through an in-house managed network of more than
+> 500 fixer teams and material vendor stores, rather than acting as a matchmaking marketplace.
+
+## Status for agents and integrators
+
+24 FIX publishes **no public API**. This profile records a measured absence, not an unfinished search.
+As of 2026-09-05, across every host the company operates (24x.co.th, www.24x.co.th, fix.24x.co.th,
+business.24x.co.th, housesolution.24x.co.th, projects.24x.co.th, careers.24x.co.th):
+
+- No OpenAPI, Swagger, GraphQL SDL, AsyncAPI, WSDL or Protobuf contract at any probed location.
+- No `/apis.json`, `/apis.yml` or `/.well-known/apis.json`.
+- No `/.well-known/` discovery document of any kind — every named path returns a genuine 404, and the
+  negative control 404s too.
+- No `/llms.txt`, no MCP server, no A2A agent card.
+- No developer portal, API reference, SDK, CLI or webhook catalog; the words "API", "SDK", "developer"
+  and "webhook" do not appear in the served HTML of any 24X property.
+- The only `/api/` path in the estate is the internal Next.js route tree of the fix.24x.co.th booking
+  app, which the site's own robots.txt disallows. It is an application internal, not a product.
+- The legacy brand domain 24fix.co is a parked GoDaddy domain and serves nothing but a lander redirect.
+
+Integration with 24 FIX is a commercial conversation, not a self-serve one:
+business enquiries go to business@24fix.co.
+
+## Business lines
+
+- 24 FIX — consumer home repair and maintenance booking: https://fix.24x.co.th
+- 24 FIX for Business — commercial and facility maintenance: https://business.24x.co.th
+- 24 House Solution — home improvement and installation: https://housesolution.24x.co.th
+- 24 Projects — renovation and construction: https://projects.24x.co.th
+
+## Company
+
+- Website: https://24x.co.th/
+- About: https://24x.co.th/en/about-us
+- Contact: https://24x.co.th/th/contact-us
+- Careers: https://careers.24x.co.th/th
+- Blog / community: https://fix.24x.co.th/blog
+- News: https://24x.co.th/th/news
+- Terms and conditions: https://24x.co.th/th/term-condition
+- Privacy policy: https://24x.co.th/th/privacy-policy
+
+## This profile
+
+- APIs.json record: https://raw.githubusercontent.com/api-evangelist/24fix/refs/heads/main/apis.yml
+- Well-known probe log: well-known/24fix-well-known.yml
+- Domain security probe: security/24fix-domain-security.yml
+- Package registry search: packages/24fix-packages.yml
+- Conformance: conformance/24fix-conformance.yml
+
+Generated: 2026-09-05 · method: generated (from apis.yml and the artifacts in this repo; 24 FIX
+publishes no llms.txt of its own — https://24x.co.th/llms.txt returns 404).

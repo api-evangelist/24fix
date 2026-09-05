@@ -1,0 +1,409 @@
+generated: '2026-09-05'
+method: probed
+source: live GET of the named /.well-known/ path list on every host 24 FIX / 24X is known to operate
+hit_count: 0
+note: 'No /.well-known/ discovery document is served on any 24X host. All seven operated hosts return
+  a genuine HTTP 404 with the application''s own 404 page on every named path, and the negative control
+  404s too, so these are true absences rather than a catch-all. The legacy 24fix.co brand domain answers
+  200 on every path with a 114-byte GoDaddy parking redirect stub — the negative control also returns
+  200, so path_echo_control failed and every hit on that host is discarded. NO WellKnown and NO SecurityTxt
+  pointer is emitted: this file records an absence, not a presence.'
+hosts:
+- host: https://24x.co.th
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
+  - path: /.well-known/aauth-resource.json
+    status: 404
+    file: null
+  - path: /apis.json
+    status: 404
+    file: null
+  - path: /apis.yml
+    status: 404
+    file: null
+  - path: /.well-known/apis.json
+    status: 404
+    file: null
+  - path: /llms.txt
+    status: 404
+    file: null
+  path_echo_control: passed
+  negative_control:
+    path: /.well-known/24fix-negative-control-7f3ab91c.json
+    status: 404
+  hit_count: 0
+- host: https://www.24x.co.th
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
+  - path: /.well-known/aauth-resource.json
+    status: 404
+    file: null
+  path_echo_control: passed
+  negative_control:
+    path: /.well-known/24fix-negative-control-7f3ab91c.json
+    status: 404
+  hit_count: 0
+- host: https://business.24x.co.th
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
+  - path: /.well-known/aauth-resource.json
+    status: 404
+    file: null
+  - path: /apis.json
+    status: 404
+    file: null
+  - path: /apis.yml
+    status: 404
+    file: null
+  - path: /.well-known/apis.json
+    status: 404
+    file: null
+  - path: /llms.txt
+    status: 404
+    file: null
+  path_echo_control: passed
+  negative_control:
+    path: /.well-known/24fix-negative-control-7f3ab91c.json
+    status: 404
+  hit_count: 0
+- host: https://fix.24x.co.th
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
+  - path: /.well-known/aauth-resource.json
+    status: 404
+    file: null
+  - path: /apis.json
+    status: 404
+    file: null
+  - path: /apis.yml
+    status: 404
+    file: null
+  - path: /.well-known/apis.json
+    status: 404
+    file: null
+  - path: /llms.txt
+    status: 404
+    file: null
+  path_echo_control: passed
+  negative_control:
+    path: /.well-known/24fix-negative-control-7f3ab91c.json
+    status: 404
+  hit_count: 0
+- host: https://housesolution.24x.co.th
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
+  - path: /.well-known/aauth-resource.json
+    status: 404
+    file: null
+  - path: /apis.json
+    status: 404
+    file: null
+  - path: /apis.yml
+    status: 404
+    file: null
+  - path: /.well-known/apis.json
+    status: 404
+    file: null
+  - path: /llms.txt
+    status: 404
+    file: null
+  path_echo_control: passed
+  negative_control:
+    path: /.well-known/24fix-negative-control-7f3ab91c.json
+    status: 404
+  hit_count: 0
+- host: https://projects.24x.co.th
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
+  - path: /.well-known/aauth-resource.json
+    status: 404
+    file: null
+  - path: /apis.json
+    status: 404
+    file: null
+  - path: /apis.yml
+    status: 404
+    file: null
+  - path: /.well-known/apis.json
+    status: 404
+    file: null
+  - path: /llms.txt
+    status: 404
+    file: null
+  path_echo_control: passed
+  negative_control:
+    path: /.well-known/24fix-negative-control-7f3ab91c.json
+    status: 404
+  hit_count: 0
+- host: https://careers.24x.co.th
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
+  - path: /.well-known/aauth-resource.json
+    status: 404
+    file: null
+  path_echo_control: passed
+  negative_control:
+    path: /.well-known/24fix-negative-control-7f3ab91c.json
+    status: 404
+  hit_count: 0
+- host: https://24fix.co
+  documents:
+  - path: /.well-known/security.txt
+    status: 200
+    file: null
+    note: parking catch-all, 114-byte HTML redirect stub — NOT a document
+  - path: /.well-known/openid-configuration
+    status: 200
+    file: null
+    note: parking catch-all, 114-byte HTML redirect stub — NOT a document
+  - path: /.well-known/oauth-authorization-server
+    status: 200
+    file: null
+    note: parking catch-all, 114-byte HTML redirect stub — NOT a document
+  - path: /.well-known/oauth-protected-resource
+    status: 200
+    file: null
+    note: parking catch-all, 114-byte HTML redirect stub — NOT a document
+  - path: /.well-known/api-catalog
+    status: 200
+    file: null
+    note: parking catch-all, 114-byte HTML redirect stub — NOT a document
+  - path: /.well-known/ai-plugin.json
+    status: 200
+    file: null
+    note: parking catch-all, 114-byte HTML redirect stub — NOT a document
+  - path: /.well-known/agent-card.json
+    status: 200
+    file: null
+    note: parking catch-all, 114-byte HTML redirect stub — NOT a document
+  - path: /.well-known/agent.json
+    status: 200
+    file: null
+    note: parking catch-all, 114-byte HTML redirect stub — NOT a document
+  - path: /.well-known/aauth-resource.json
+    status: 200
+    file: null
+    note: parking catch-all, 114-byte HTML redirect stub — NOT a document
+  path_echo_control: failed
+  negative_control:
+    path: /.well-known/24fix-negative-control-7f3ab91c.json
+    status: 200
+    bytes: 114
+  soft_404_control:
+    status: 200
+    bytes: 114
+    body: <!DOCTYPE html><html><head><script>window.onload=function(){window.location.href="/lander"}</script></head></html>
+  hit_count: 0
+  note: 'GoDaddy parked domain: every path returns the same 114-byte lander redirect, including the negative
+    control. Every 200 on this host is discarded.'
+- host: https://www.24fix.co
+  documents:
+  - path: /.well-known/security.txt
+    status: 200
+    file: null
+    note: parking catch-all, 114-byte HTML redirect stub — NOT a document
+  - path: /.well-known/openid-configuration
+    status: 200
+    file: null
+    note: parking catch-all, 114-byte HTML redirect stub — NOT a document
+  - path: /.well-known/oauth-authorization-server
+    status: 200
+    file: null
+    note: parking catch-all, 114-byte HTML redirect stub — NOT a document
+  - path: /.well-known/oauth-protected-resource
+    status: 200
+    file: null
+    note: parking catch-all, 114-byte HTML redirect stub — NOT a document
+  - path: /.well-known/api-catalog
+    status: 200
+    file: null
+    note: parking catch-all, 114-byte HTML redirect stub — NOT a document
+  - path: /.well-known/ai-plugin.json
+    status: 200
+    file: null
+    note: parking catch-all, 114-byte HTML redirect stub — NOT a document
+  - path: /.well-known/agent-card.json
+    status: 200
+    file: null
+    note: parking catch-all, 114-byte HTML redirect stub — NOT a document
+  - path: /.well-known/agent.json
+    status: 200
+    file: null
+    note: parking catch-all, 114-byte HTML redirect stub — NOT a document
+  - path: /.well-known/aauth-resource.json
+    status: 200
+    file: null
+    note: parking catch-all, 114-byte HTML redirect stub — NOT a document
+  path_echo_control: failed
+  negative_control:
+    path: /.well-known/24fix-negative-control-7f3ab91c.json
+    status: 200
+    bytes: 114
+  soft_404_control:
+    status: 200
+    bytes: 114
+    body: <!DOCTYPE html><html><head><script>window.onload=function(){window.location.href="/lander"}</script></head></html>
+  hit_count: 0
+  note: 'GoDaddy parked domain: every path returns the same 114-byte lander redirect, including the negative
+    control. Every 200 on this host is discarded.'
