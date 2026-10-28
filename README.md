@@ -64,48 +64,83 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-24 FIX is the flagship consumer home-maintenance brand of 24 Solution Group (Thailand) Co., Ltd.,
-founded in Bangkok in 2018 and now operating under the 24X umbrella brand. It runs an end-to-end
-property maintenance and home-solutions service — air-conditioner cleaning and repair, appliance
-service, electrical, plumbing, painting, cleaning, renovation and construction — through an in-house
-managed network of more than 500 fixer teams and material vendor stores across Bangkok and the
-surrounding provinces, with expansion into Phuket and Singapore. Four business lines sit under the
-group: 24 FIX (consumer), 24 FIX for Business (commercial and facility maintenance), 24 House
-Solution, and 24 Projects (renovation and construction).
+24 FIX is the flagship consumer home-maintenance brand of 24 Solution Group (Thailand) Co., Ltd., founded in Bangkok in 2018 by six co-founders and now operating under the 24X umbrella brand. It runs an end-to-end property maintenance and home-solutions service rather than a matchmaking marketplace: air-conditioner cleaning and repair, washing-machine and appliance service, electrical and plumbing work, painting, cleaning, renovation and construction, delivered through an in-house managed ecosystem of more than 500 fixer teams and material vendor stores across Bangkok and the surrounding provinces, with expansion into Phuket and Singapore. The group fields four business lines — 24 FIX (consumer), 24 FIX for Business (commercial and facility maintenance, 500+ corporate customers), 24 House Solution, and 24 Projects (renovation and construction) — supported by an internal computerized maintenance management system that dispatches, tracks and quality-controls technician jobs. It raised a seed round in 2020, a pre-Series A from ECG Venture Capital in 2021, a 150 million THB Series A from Krungsri Finnovate, ECG Venture Capital and BCH Ventures in 2022, and a USD 5 million Series B from Wavemaker and Krungsri Finnovate in 2023. 24 FIX is a consumer and B2B services operator, not a software vendor: it publishes no developer portal, no API documentation, no SDKs and no machine-readable API contract, and the only /api/ path on its booking application is an internal Next.js route tree its own robots.txt disallows.
 
-## API surface
+**Areas:** Company · Home Services · Property Maintenance · Facility Management · Field Service · Marketplace · Construction · Renovation · Consumer Services · Thailand · Southeast Asia
 
-**24 FIX publishes no public API.** This is a measured absence, recorded 2026-09-05 after a full
-contract-discovery pass across every host the company operates — `24x.co.th`, `www.24x.co.th`,
-`fix.24x.co.th`, `business.24x.co.th`, `housesolution.24x.co.th`, `projects.24x.co.th` and
-`careers.24x.co.th`:
+## 24 FIX on APIs.io
 
-- No OpenAPI, Swagger, GraphQL SDL, AsyncAPI, WSDL or Protobuf contract at any probed location.
-- No `/apis.json`, `/apis.yml` or `/.well-known/apis.json`.
-- No `/.well-known/` discovery document at all — every named path returns a genuine 404, and so does
-  the negative control, so these are true absences rather than a catch-all.
-- No `/llms.txt`, MCP server or A2A agent card.
-- No developer portal, API reference, SDK, CLI or webhook catalog. The strings "API", "SDK",
-  "developer" and "webhook" do not appear in the served HTML of any 24X property.
-- The one `/api/` tree in the estate is the internal Next.js route set of the `fix.24x.co.th`
-  booking app, which the site's own `robots.txt` disallows. It is an application internal, not a
-  product.
-- The legacy brand domain `24fix.co` is a parked GoDaddy domain: it answers 200 on every path with a
-  114-byte lander redirect, including a negative control that cannot exist, so every 200 on that
-  host is discarded.
+Everything profiled for 24 FIX is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/24fix/](https://apis.io/providers/24fix/)** — or go straight to one of the APIs or properties below.
 
-Corporate service and partnership enquiries go to business@24fix.co.
+### Published properties
 
-## Links
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-- Company: https://24x.co.th/
-- 24 FIX (consumer booking): https://fix.24x.co.th
-- 24 FIX for Business: https://business.24x.co.th
-- 24 House Solution: https://housesolution.24x.co.th
-- 24 Projects: https://projects.24x.co.th
-- About: https://24x.co.th/en/about-us
-- Contact: https://24x.co.th/th/contact-us
-- Blog / community: https://fix.24x.co.th/blog
-- Terms and conditions: https://24x.co.th/th/term-condition
-- Privacy policy: https://24x.co.th/th/privacy-policy
-- Secondary-market listing (harvest source): https://equityzen.com/company/24fix
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [24Fix Domain Security](https://apis.io/security/24fix/24fix-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://24x.co.th/)
+- [Support](https://24x.co.th/th/contact-us)
+- [Blog](https://fix.24x.co.th/blog)
+- [Terms of service](https://24x.co.th/th/term-condition)
+- [Privacy policy](https://24x.co.th/th/privacy-policy)
+
+## API Evangelist rating
+
+**Kin Score 11.7** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 55.4 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 7.1 |
+| Access clarity | 21.1 |
+
+**Agent readiness 0.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 18.6** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/24fix/](https://apis.io/providers/24fix/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for 24 FIX: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/24fix/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
