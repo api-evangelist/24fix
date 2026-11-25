@@ -66,7 +66,7 @@
 
 24 FIX is the flagship consumer home-maintenance brand of 24 Solution Group (Thailand) Co., Ltd., founded in Bangkok in 2018 by six co-founders and now operating under the 24X umbrella brand. It runs an end-to-end property maintenance and home-solutions service rather than a matchmaking marketplace: air-conditioner cleaning and repair, washing-machine and appliance service, electrical and plumbing work, painting, cleaning, renovation and construction, delivered through an in-house managed ecosystem of more than 500 fixer teams and material vendor stores across Bangkok and the surrounding provinces, with expansion into Phuket and Singapore. The group fields four business lines — 24 FIX (consumer), 24 FIX for Business (commercial and facility maintenance, 500+ corporate customers), 24 House Solution, and 24 Projects (renovation and construction) — supported by an internal computerized maintenance management system that dispatches, tracks and quality-controls technician jobs. It raised a seed round in 2020, a pre-Series A from ECG Venture Capital in 2021, a 150 million THB Series A from Krungsri Finnovate, ECG Venture Capital and BCH Ventures in 2022, and a USD 5 million Series B from Wavemaker and Krungsri Finnovate in 2023. 24 FIX is a consumer and B2B services operator, not a software vendor: it publishes no developer portal, no API documentation, no SDKs and no machine-readable API contract, and the only /api/ path on its booking application is an internal Next.js route tree its own robots.txt disallows.
 
-**Areas:** Company · Home Services · Property Maintenance · Facility Management · Field Service · Marketplace · Construction · Renovation · Consumer Services · Thailand · Southeast Asia
+**Areas:** Company · Home Services · Property Maintenance · Facility Management · Field Service Management · Marketplace · Construction · Renovation · Consumer Services · Thailand · Southeast Asia
 
 ## 24 FIX on APIs.io
 
@@ -80,7 +80,7 @@ Each property below is a page on APIs.io carrying the machine-readable artifact 
 
 Authentication, trust centre, and vulnerability disclosure.
 
-- [24Fix Domain Security](https://apis.io/security/24fix/24fix-domain-security/)
+- [24 FIX Domain Security](https://apis.io/security/24fix/24fix-domain-security/)
 
 ## Where to find this API
 
@@ -94,7 +94,7 @@ Links to the company's own pages. This repository publishes no copy of their spe
 
 ## API Evangelist rating
 
-**Kin Score 11.7** — emerging · rubric 0.24.0 · scored 2026-10-17
+**Kin Score 11.3** — emerging · rubric 0.28.1 · scored 2026-11-21
 
 | Facet | Score |
 |---|---|
@@ -103,7 +103,7 @@ Links to the company's own pages. This repository publishes no copy of their spe
 | Contract governance | 0.0 |
 | Operational transparency | 0.0 |
 | Developer ergonomics | 7.1 |
-| Access clarity | 21.1 |
+| Access clarity | 23.4 |
 
 **Agent readiness 0.0** — human-only
 
@@ -128,8 +128,14 @@ Links to the company's own pages. This repository publishes no copy of their spe
 | Protected Resource Metadata | — |
 | Dynamic Client Registration | — |
 | Agentic Commerce | — |
+| Pagination Ratio | na |
+| Operation Distinctiveness | na |
+| MCP Tool Quality | na |
+| Onboarding Descriptor | — |
+| Dns Aid Index | na |
+| Markdown Negotiation | na |
 
-**Regulatory alignment 18.6** — Horizontal (data, software, accessibility, platform)
+**Regulatory alignment 12.7** — Horizontal (data, software, accessibility, platform)
 
 The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/24fix/](https://apis.io/providers/24fix/).
 
